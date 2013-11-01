@@ -1,6 +1,21 @@
 
 body {
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+.text-color {
+  color: #8d8d8d;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #b6cece;
+  font-weight: 600;
 }
 
 .name {
@@ -22,7 +37,27 @@ body {
   left:0;
   color: #fff;
   text-shadow:
-    -1px 0px 1px rgba(255,255,255,.8),
-    1px 0px 1px rgba(0,0,0,.8);
+    -1px 0px 1px rgba(255,255,255,.5),
+    1px 0px 1px rgba(0,0,0,1);
   z-index: 1;
+}
+
+.links {
+  margin-top: 30px;
+}
+
+.bio {
+  margin-top: 30px;
+}
+
+.projects {
+  margin-top: 40px;
+}
+
+.manterest {
+  margin-top: 35px;
+}
+
+.own-your-stuff {
+  margin-top: 40px;
 }
