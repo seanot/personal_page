@@ -1,9 +1,10 @@
 # Site settings
-title: Sean O'Toole - Web Developer
+title: Sean O'Toole
 email: sean.otoole@seanotoole.net
 description: "This site is hosted by Github.com"
 baseurl: ""
 url: "http://seanotoole.net"
+username: "seanot"
 
 # Build settings
 markdown: kramdown
