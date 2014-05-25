@@ -42,7 +42,7 @@ a:visited { color: #205caa; }
 
 .site-header {
   border-top: 5px solid #a64d00;
-  border-bottom: 1px solid #006064;
+  border-bottom: 1px solid #a64d00;
   min-height: 56px;
   background-color: #01939a;
 }
@@ -76,7 +76,7 @@ a:visited { color: #205caa; }
 /* Site footer */
 
 .site-footer {
-  border-top: 1px solid #006064;
+  border-top: 1px solid #a64d00;
   background-color: #5dc8cd;
   padding: 30px 0;
 }
@@ -120,7 +120,7 @@ a:visited { color: #205caa; }
 .site-footer p {
   font-size: 15px;
   letter-spacing: -.3px;
-  color: #828282;
+  color: #a64d00;
 }
 
 .github-icon-svg,
