@@ -14,7 +14,7 @@ Running Jekyll locally is simple and straight forward on a Mac – less so an a 
 ~/new_blog_name $ jekyll serve –w
 {% endhighlight %}
 
-This created a basic Jekyll framework in the new_blog_name directory that has all of the basic files necessary to publish your blog. Note that when I start the Jekyll server with the “Jekyll serve” command, I follow it with “-w”. This adds a watcher to the server that regenerates the site files on each saved change. It’s worth noting, however, that config files, headers and footers are not detected by the watcher and require a control-c restart of the server in order to be regenerated.
+This created a basic Jekyll framework in the `new_blog_name` directory that has all of the basic files necessary to publish your blog. Note that when I start the Jekyll server with the `Jekyll serve -w` command, I follow it with `-w`. This adds a watcher to the server that regenerates the site files on each saved change. It’s worth noting, however, that config files, headers and footers are not detected by the watcher and require a control-c restart of the server in order to be regenerated.
 
 One of the comments that I saw posted on Jekyll’s help page mentioned that Github was not running the latest version of the software leading to potential compatibility issues for those using the newest features. The solution is to add a Gemfile to your root directory with the following content:
 {% highlight ruby %}
@@ -24,10 +24,13 @@ gem “github-pages”
 {% endhighlight %}
 
 Notes:
-<ul>
-  <li>Jekyll docs recommend putting the _site directory in your .gitignore file as Github auto-generates the _site directory on each push.</li>
-  <li>Unless you are using Project Pages on your site, you will push to master.</li>
-  <li>If you have a custom domain specified, be sure to put a file named CNAME in your root directory with your URL as its only content.</li>
-  <li>I like the ability to use both Markdown and HTML  for your pages. I wanted a call to my resume to open a new tab and found that this was challenging in Markdown. I, instead, wrote it in HTML with a simple “target=_blank” in the href.</li>
-</ul>
+
+*  Jekyll docs recommend putting the `_site` directory in your .gitignore file as Github auto-generates the `_site` directory on each push.
+
+*  Unless you are using Project Pages on your site, you will push to master.
+
+*  If you have a custom domain specified, be sure to put a file named CNAME in your root directory with your URL as its only content.
+
+*  I like the ability to use both Markdown and HTML  for your pages. I wanted a call to my resume to open a new tab and found that this was challenging in Markdown. I, instead, wrote it in HTML with a simple `target="_blank”` in the href.
+
 Overall, I found Jekyll to be easy to install and modify. With Github Pages costing nothing, it’s a great way to host a static website and blog.
