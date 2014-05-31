@@ -50,6 +50,7 @@ blockquote {
   border-bottom: 1px solid #a64d00;
   min-height: 56px;
   background-color: #01939a;
+  position: fixed;
 }
 
 .site-title,
@@ -76,6 +77,22 @@ blockquote {
   margin-left: 20px;
   color: #ffb473;
   letter-spacing: -.5px;
+}
+
+.headroom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all .2s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
 }
 
 /* Site footer */
