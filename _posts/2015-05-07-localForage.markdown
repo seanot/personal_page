@@ -3,6 +3,7 @@ layout: post
 title: "Local Storage with localForage"
 date: 2015-05-07 14:30
 catagories: coding
+comments: true
 ---
 
 Over the past several months, I have been working on a project that provides scheduling, invoicing and payroll for a small contracting firm. Cost constraints dictate a responsive web app versus native apps – at least for now. Schedule creation and manipulation and payroll are pretty much handled in an office environment with a reliable web connection but clocking of hours and invoicing can happen either in the office or in the field. The geographical reach of this firm made it almost certain that mobile users would find themselves without a reliable internet connection much of the time.
@@ -63,3 +64,19 @@ function generateGuid() {
 Syncing with the server was simple as well and outside the scope of this post. Maybe, once I’ve refactored my JavaScript a bit more, I’ll post something on how I handled it.
 
 If you haven’t tried localForage in your web apps, you should. There is no reason, with the tools available today, that we should leave our users stranded if their internet connection goes down.
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'seanotoole';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+{% endif %}
