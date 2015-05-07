@@ -51,7 +51,7 @@ localforage.getItem(key, function(err, value) {
     });
 });
 {% endhighlight %}
-You are going to want to generate your uuids locally. I looked at several example around the internet and found the same basic structure in all of them. I ended up building mine to incorporate date (performance.now) into the randomness as I haven’t any control over the Math.random function in my user’s browsers.
+You are going to want to generate your uuids locally. I looked at several examples around the internet and found the same basic structure in all of them. I ended up writing mine to incorporate date (performance.now) into the randomness as I haven’t any control over the Math.random function in my user’s browsers.
 {% highlight javascript %}
 function generateGuid() {
     var d = performance.now();
@@ -63,7 +63,7 @@ function generateGuid() {
     return uuid;
 }
 {% endhighlight %}
-Syncing with the server was simple as well and outside the scope of this post. Maybe, once I’ve refactored my JavaScript a bit more, I’ll post something on how I handled it.
+Syncing with the server was simple as well but outside the scope of this post. Maybe, once I’ve refactored my JavaScript a bit more, I’ll post something on how I handled it.
 
 If you haven’t tried localForage in your web apps, you should. There is no reason, with the tools available today, that we should leave our users stranded if their internet connection goes down.
 
