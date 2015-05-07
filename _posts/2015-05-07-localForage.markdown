@@ -2,6 +2,8 @@
 layout: post
 title: "Local Storage with localForage"
 date: 2015-05-07 14:30
+description: localForage usage with search and update functions
+keywords: localForage
 catagories: coding
 comments: true
 ---

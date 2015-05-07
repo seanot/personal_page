@@ -1,7 +1,7 @@
 # Site settings
 title: Sean O'Toole
 email: sean.otoole@seanotoole.net
-description: "This site is hosted by Github.com"
+description: "Ramblings on programming and life"
 baseurl: ""
 url: "http://seanotoole.net"
 username: "seanot"
