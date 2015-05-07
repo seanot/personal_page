@@ -250,6 +250,8 @@ blockquote {
 .post-content ul,
 .post-content ol { padding-left: 20px; }
 
+.post pre { overflow-x: auto;}
+
 .post pre,
 .post code {
   border: 1px solid #d5d5e9;
@@ -266,7 +268,10 @@ blockquote {
 .post ul,
 .post ol { margin-left: 1.35em; }
 
-.post pre code { border: none; }
+.post pre code {
+  border: none;
+  white-space: pre;
+}
 
 /* terminal */
 .post pre.terminal {
