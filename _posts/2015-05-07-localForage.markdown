@@ -12,7 +12,7 @@ Over the past several months, I have been working on a project that provides sch
 
 Perfect use case for WebSQL! No, wait… deprecated and not available in all browsers. Okay, how about IndexedDB? Not universally supported in older browser versions. Well then localStorage, right? Not if we plan to store objects.
 
-Enter localForage – Mozilla’s JavaScript library that utilizes IndexedDB, WebSQL, and localStorage when all else fails. And it even works asynchronously to make the user experience more pleasant. Documentation is light but adequate, [localForage](https://mozilla.github.io/localForage/), and there are a few blog posts that basically parrot the Mozilla docs.
+Enter localForage – Mozilla’s JavaScript library that utilizes IndexedDB, WebSQL, and localStorage when all else fails. And it even works asynchronously to make the user experience more pleasant. [Documentation](https://mozilla.github.io/localForage/) is light but adequate and there are a few blog posts that basically parrot the Mozilla docs.
 
 Before I get into how I put localForage to work, let’s go over the use case. My client employs skilled laborers that have a need to see schedules and other documentation pertaining to the specific jobs to which they have been assigned. They need to have the ability to clock in and out and record start and stop times for those specific jobs. Most of their interaction with the app will be remote via mobile devices. Here are the constraints that matter for the clock functionality: unreliable internet connections; a wide variety of mobile devices likely to be used; and the possibility of clocking in and out on different devices.
 
