@@ -11,12 +11,9 @@
     <br>
 
     <div class="page-content">
-      <div class="wrap">
-      {{ content }}
-      </div>
-      <div class="wrap">
-      {% include comments.html %}
-      </div>
+      <div class="wrap">{{ content }}</div>
+      <div class="wrap">{% include twitter_plug.html %}</div>
+      <div class="wrap">{% include comments.html %}</div>
     </div>
 
     {% include footer.html %}

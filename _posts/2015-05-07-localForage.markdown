@@ -6,6 +6,7 @@ description: localForage usage with search and update functions
 keywords: localForage
 catagories: coding
 comments: true
+social: true
 ---
 
 Over the past several months, I have been working on a project that provides scheduling, invoicing and payroll for a small contracting firm. Cost constraints dictate a responsive web app versus native apps – at least for now. Schedule creation and manipulation and payroll are pretty much handled in an office environment with a reliable web connection but clocking of hours and invoicing can happen either in the office or in the field. The geographical reach of this firm made it almost certain that mobile users would find themselves without a reliable internet connection much of the time.
