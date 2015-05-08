@@ -9,3 +9,7 @@ username: "seanot"
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# gems to be loded on github
+gems:
+  - jekyll-sitemap

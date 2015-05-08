@@ -5,18 +5,20 @@
 
     <body>
 
-    {% include header.html %}
+      <header id="header" class="headroom headroom--pinned" role="banner">
+        {% include header.html %}
+      </header>
 
-    <br>
-    <br>
+      <br>
+      <br>
 
-    <div class="page-content">
-      <div class="wrap">{{ content }}</div>
-      <div class="wrap">{% include twitter_plug.html %}</div>
-      <div class="wrap">{% include comments.html %}</div>
-    </div>
+      <div class="page-content">
+        <div class="wrap">{{ content }}</div>
+        <div class="wrap">{% include twitter_plug.html %}</div>
+        <div class="wrap">{% include comments.html %}</div>
+      </div>
 
-    {% include footer.html %}
-    {% include google_analytics.html %}
+      {% include footer.html %}
+      {% include google_analytics.html %}
     </body>
 </html>
