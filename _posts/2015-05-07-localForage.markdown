@@ -52,10 +52,10 @@ localforage.getItem(key, function(err, value) {
     });
 });
 {% endhighlight %}
-You are going to want to generate your uuids locally. I looked at several examples around the internet and found the same basic structure in all of them. I ended up writing mine to incorporate date (performance.now) into the randomness as I haven’t any control over the Math.random function in my user’s browsers.
+You are going to want to generate your uuids locally. I looked at several examples around the internet and found the same basic structure in all of them. I ended up writing mine to incorporate date (Date.now  <s>performance.now</s>  <i>edited May 13 to reflect that iOS's javascript does not support performance.now</i>) into the randomness as I haven’t any control over the Math.random function in my user’s browsers.
 {% highlight javascript %}
 function generateGuid() {
-    var d = performance.now();
+    var d = Date.now();
     var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
         var r = (d + Math.random()*16)%16|0;
         d = Math.floor(d/16);
