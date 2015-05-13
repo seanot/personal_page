@@ -4,7 +4,6 @@ title: "Local Storage with localForage"
 date: 2015-05-07 14:30
 description: localForage usage with search and update functions
 keywords: localForage
-catagories: coding
 comments: true
 social: true
 ---
@@ -26,9 +25,9 @@ Learning the localForage library was pretty painless. The data API contains only
 Used: getItem(), setItem(), removeItem(), iterate()
  Not used: clear(), length(), key(), keys()
 {% endhighlight %}
-Intitally I also used `keys()` and `length()` but no longer found them useful once I switched from integer ids to uuids. uuids made synchronization much simpler than it otherwise might have been. And in keeping with my fear of dependencies, I forewent the use of a gem to manage the uuid process. It’s not complicated; just do it. I used `clear()` from the browser console's commandline while I was testing.
+Initially I also used `keys()` and `length()` but no longer found them useful once I switched from integer ids to uuids. uuids made synchronization much simpler than it otherwise might have been. And in keeping with my fear of dependencies, I forewent the use of a gem to manage the uuid process. It’s not complicated; just do it. I used `clear()` from the browser console's command-line while I was testing.
 
-There is nothing that I can share in the way of general usage of localForage that adds to the general knowledgebase. However, you’ll notice in the short list of functions that there is no mention of search or update so I’ll touch on how I handled those.
+There is nothing that I can share in the way of general usage of localForage that adds to the general knowledge base. However, you'll notice in the short list of functions that there is no mention of search or update so I’ll touch on how I handled those.
 
 Search was accomplished by way of the `iterate()` function. Here’s an example:
 {% highlight javascript %}
@@ -66,4 +65,4 @@ function generateGuid() {
 {% endhighlight %}
 Syncing with the server was simple as well but outside the scope of this post. Maybe, once I’ve refactored my JavaScript a bit more, I’ll post something on how I handled it.
 
-If you haven’t tried localForage in your web apps, you should. There is no reason, with the tools available today, that we should leave our users stranded if their internet connection goes down.
+If you haven't tried localForage in your web apps, you should. There is no reason, with the tools available today, that we should leave our users stranded if their internet connection goes down.
