@@ -2,7 +2,6 @@
 layout: post
 title: "Jekyll… Beyond Github.io"
 date: 2014-06-11 09:30:00
-categories: jekyll coding
 ---
 
 After playing with Jekyll for a couple of weeks, I felt it was time to push beyond my github.io installation and try setting it up on a VPS. I already have multiple apps running at Digital Ocean so they were the natural choice for this exercise.

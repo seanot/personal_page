@@ -2,7 +2,6 @@
 layout: post
 title: "Jekyll... First Impressions"
 date: 2014-05-25 09:30:00
-categories: jekyll coding
 ---
 
 After ignoring my personal site for the better part of the last six months, I finally upgraded from hardcoded HTML to the Jekyll static site generator. The transition is ongoing as I've not yet really added any styling to the site but the mechanical elements are up and running. What follows is a review of some of the difficulties that I had in getting the site up and running on Github Pages along with the solutions that I discovered.
